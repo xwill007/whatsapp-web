@@ -25,6 +25,6 @@ Route::get('messages', function() {
     ]
   ]);
 
-  return $messages;
-  // return Arr::of($messages['messages'])->tree("to");
+  // return $messages;
+  return Arr::of($messages['messages'])->tree("to");
 });
